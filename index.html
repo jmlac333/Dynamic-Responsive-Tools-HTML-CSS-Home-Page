@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>John Lee</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		#visitCount {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: #f2eeee;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color:#4B0082;;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#visitCount:hover {
+    background-color: #0056b3;
+}
+
+</style>
+	</head>
+	<body class="is-preload">
+
+
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Education</a></li>
+							<li><a href="#two">About Me</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+			<div id="wrapper">
+
+
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>John Lee</h1>
+							<h2>Cary, North Carolina</h2>
+							<p>I'm a Cloud Engineer specializing in AWS cloud technologies. I currently hold two AWS Cloud certifications, including the AWS Solutions Architect Associate and the AWS Solutions Architect Professional Certifications, in addition to extensive experience with Cisco Network Engineering Technologies (CCNA and CCNP)</p>
+
+
+
+							<p id="visitCount"></p>
+							<script>
+							window.onload = function() {
+								if(localStorage.getItem("visitCount")) {
+										localStorage.setItem("visitCount", Number(localStorage.getItem("visitCount")) + 1);
+								} else {
+										localStorage.setItem("visitCount", 1);
+								}
+								document.getElementById("visitCount").innerHTML = "View Count: " + localStorage.getItem("visitCount");
+						}
+	</script>
+						</div>
+					</section>
+
+
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Professional_badge.69d82ff1b2861e1089539ebba906c70b011b928a.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Certications</h2>
+									<p>A certified AWS Solutions Architect Professional with over 4 in-demand IT certifications</p>
+
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="data:image/png;base64,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" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>University of Michigan</h2>
+									<p>Graduated from the University of Michigan</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Coding Proficiency</h2>
+									<p>Coding experience in Javascript, Python, React, Terraform, HTML/CSS, and more</p>
+									<ul class="actions">
+										<li><aclass="button">Portfolio below</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>About Me</h2>
+							<p>Highly knowledgable and adaptable with certifiable IT experience and know how. I hold some of the most sought after certifications in the industry.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Software Development Projects</h3>
+									<h3><a href="https://www.jshirtify.cloud/" style="color: rgb(51, 168, 235); text-decoration: underline;">J Shirtify, T-shirt customization tool</a></h3>
+									<p class="description">A virtual 3D T-Shirt customization application. Written using React, Node, ThreeJS, Python, Javascript, and utilizes OpenAI's Dall-E API for A.I. functionality. Hosted using AWS Route53 and AWS Amplify</p>
+
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Certifications</h3>
+									<p>AWS Solutions Architect Professional, AWS Solutions Architect Associate, CCNA (Cisco Certified Network Associate), CCNP (Cisco Certified Network Professional). Check out some of my certifications<a href="https://www.credly.com/badges/0d2ffce9-ca7f-4fc2-8d59-f4152e8b9d0e/public_url" style="color: rgb(51, 168, 235); text-decoration: underline;"> here.</a></p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Cloud based Projects</h3>
+									<h3><a href="https://www.jenniesicecream.com/" style="color: rgb(51, 168, 235); text-decoration: underline;">Jennie's Ice Cream Bot</a></h3>
+									<p class="description">A dynamic web app that utilizes AWS Connect to provide a fully interactive customized call center. Written primarily in HTML/CSS, hosted using AWS Route53 and AWS Amplify.</p>
+									<p></p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Project Portfolio</h3>
+									<p>Check out some of my development projects at my <a href="https://github.com/jmlac333?tab=repositories" style="color: rgb(51, 168, 235); text-decoration: underline;"> project portfolio</a></p></p>
+
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Proficient in multiple coding languages and libraries</h3>
+									<p>Including Javascript, React, ThreeJS, Terraform, Python, and HTML/CSS</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Highly Knowledgable</h3>
+									<p>Certified expert knowledge in multiple domains</p>
+								</section>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Contact me about job-related inquiries at my email</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>1577 Lexington Dr., Troy, MI, 48084, USA<br />
+											</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">johnlee0207@gmail.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(248) 225-1629</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
